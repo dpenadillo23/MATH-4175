@@ -1,0 +1,1 @@
+prettytables is an imported library. Run "pip install prettytables" to be able to run this python script.
