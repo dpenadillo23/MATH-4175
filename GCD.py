@@ -48,4 +48,13 @@ while v3 != 0:
 print(table)
 print(gcd)
 
+# Extract results after loop ends
+# At this point: u3 = gcd(a, b), u1 = x, u2 = y
+x = u1
+y = u2
+
+print(f"ngcd({a}, {b}) = {u3}")
+print(f"x = {x}")
+print(f"y = {y}")
+print(f"verfication: {a}*({x}) + {b}*({y}) = {a*x + b*y}")
  
