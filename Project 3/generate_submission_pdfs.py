@@ -70,26 +70,26 @@ def make_trail_pdf(out_path: Path) -> None:
         y -= 16
 
     # Simple SPN block sketch
-    top = h - 260
+    top = h - 400
     c.setFont("Helvetica-Bold", 10)
     c.drawString(55, top + 90, "P bits")
-    c.drawString(180, top + 90, "Round 1 S-boxes")
-    c.drawString(325, top + 90, "Permutation")
-    c.drawString(440, top + 90, "Round 2 S-boxes")
-    c.drawString(560, top + 90, "G/H wires")
+    c.drawString(150, top + 90, "Round 1 S-boxes")
+    c.drawString(295, top + 90, "Permutation")
+    c.drawString(410, top + 90, "Round 2 S-boxes")
+    c.drawString(530, top + 90, "G/H wires")
 
-    c.rect(170, top + 30, 110, 50)
-    c.rect(430, top + 30, 110, 50)
-    c.drawString(185, top + 58, "S11: 6->4")
-    c.drawString(185, top + 42, "S12: 6->4")
-    c.drawString(445, top + 58, "S21: 4->2")
-    c.drawString(445, top + 42, "S22: 2->2")
+    c.rect(140, top + 30, 110, 50)
+    c.rect(400, top + 30, 110, 50)
+    c.drawString(175, top + 58, "S11: 6->4")
+    c.drawString(175, top + 42, "S12: 6->4")
+    c.drawString(435, top + 58, "S21: 4->2")
+    c.drawString(435, top + 42, "S22: 2->2")
 
-    c.line(90, top + 55, 170, top + 55)
-    c.line(280, top + 55, 340, top + 55)
-    c.line(370, top + 55, 430, top + 55)
-    c.line(540, top + 55, 600, top + 55)
-    c.drawString(345, top + 58, "perm")
+    c.line(60, top + 55, 140, top + 55)
+    c.line(250, top + 55, 340, top + 55)
+    c.line(340, top + 55, 400, top + 55)
+    c.line(510, top + 55, 570, top + 55)
+    c.drawString(310, top + 58, "perm")
 
     c.setFont("Helvetica-Oblique", 9)
     c.drawString(50, 75, "Attach this with your final typed report PDF.")
